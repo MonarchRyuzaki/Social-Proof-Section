@@ -1,0 +1,178 @@
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    width: 70vw;
+    line-height: 30px;
+    color: var(--VeryDarkMagenta);
+    margin-bottom: 25px;
+}
+
+.description{
+    width: 80vw;
+    color: var(--VeryDarkMagenta);
+    margin-bottom: 20px;
+
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review{
+    border-radius: 5px;
+    background-color: var(--LightGrayishMagenta);
+    width: 85vw;
+    max-width: 470px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px;
+}
+
+.rev{
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+    margin-top: 5px;
+}
+
+.stars img{
+    margin: 5px;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    background-color: var(--VeryDarkMagenta);
+    padding: 20px 35px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.identity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 25px;
+}
+
+.identity img{
+    border-radius: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+
+.name{
+    color: white;
+    font-weight: 700;
+}
+
+.status{
+    color: var(--SoftPink);
+    font-weight: 500;
+}
+
+.comment{
+    color: var(--White);
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+@media (min-width: 988px) {
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    header{
+        max-width: 400px;
+        align-items: flex-start;
+        margin-right: 100px;
+    }
+    
+    h1{
+        font-size: 3.3rem;
+        width: 350px;
+        text-align: left;
+        line-height: 45px;
+    }
+    .description{
+        width: 350px;
+        text-align: left;
+        line-height: 20px;
+    }
+    .stars{
+        display: inline;
+    }
+    .rev{
+        display: inline;
+        margin-left: 15px;
+        position: relative;
+        bottom: 6px
+    }
+    .review2{
+        position: relative;
+        left: 60px;
+    }
+    .review3{
+        position: relative;
+        left: 125px;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .card2{
+        position: relative;
+        top: 20px;
+    }
+    .card3{
+        position: relative;
+        top: 40px;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
